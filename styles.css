@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'ABCSocialCondensed';
+    src: url(./ABCSocialCondensed-Book-Trial.woff2) format("woff2");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('./assets/background/base_game_background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'ABCSocialCondensed', Arial, sans-serif;
+    color: white;
+}
+
+/* Header styles */
+.game-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0rem 2rem;
+}
+.game-time-left,
+.game-brand-right {
+    font-size: 1rem;
+}
+
+/* Canvas style */
+
+/* Autospin line */
+
+/* Main buttons styles */
+.main-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0rem 1rem 0.5rem 1rem;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+     margin-top: auto;
+}
+
+.main-buttons button {
+    font-family: 'ABCSocialCondensed', Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.main-buttons-center {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bonus {
+    white-space: pre-line;
+}
+
+/* Footer styles */
+.betting {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 100vw;
+    padding: 0rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    background: transparent;
+    margin-top: 0;
+}
+
+.betting>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 0;
+}
+
+.bet {
+    align-items: flex-start;
+}
+
+.win {
+    align-items: center;
+}
+
+.balance {
+    align-items: flex-end;
+}
+
+.bet>p:first-child,
+.win>p:first-child,
+.balance>p:first-child {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.bet>p:nth-child(2),
+.win>p:nth-child(2),
+.balance>p:nth-child(2) {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.betting>div p {
+    margin: 0;
+    line-height: 1rem;
+}
