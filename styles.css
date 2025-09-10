@@ -16,16 +16,16 @@ html,
     color: white;
 } */
  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    background: url('./assets/background/base_game_background.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'ABCSocialCondensed', Arial, sans-serif;
-    color: white;
-    overflow: hidden; 
+     margin: 0;
+     padding: 0;
+     height: calc(var(--vh, 1vh) * 100); 
+     display: flex;
+     flex-direction: column;
+     background: url('./assets/background/base_game_background.png') no-repeat center center fixed;
+     background-size: cover;
+     font-family: 'ABCSocialCondensed', Arial, sans-serif;
+     color: white;
+     overflow: hidden; 
  }
 
 /* Header styles */

@@ -9,6 +9,15 @@
 </head>
 
 <body>
+        <script>
+            function setBodyHeight() {
+                var vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', vh + 'px');
+            }
+            setBodyHeight();
+            window.addEventListener('resize', setBodyHeight);
+            window.addEventListener('orientationchange', setBodyHeight);
+        </script>
     <section class="game-time">
         <div class="game-time-left">00:00</div>
         <div class="game-brand-right">Love Rodeo</div>
