@@ -30,7 +30,39 @@ body {
 
 /* Canvas style */
 
+.play-logic-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
 /* Autospin line */
+
+.autospin {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 100vw;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.bet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sound, .autoplay {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
 
 /* Main buttons styles */
 .main-buttons {
@@ -41,7 +73,7 @@ body {
     padding: 0rem 1rem 0.5rem 1rem;
     box-sizing: border-box;
     margin-bottom: 0.5rem;
-    margin-top: auto;
+
 }
 
 .main-buttons button {
