@@ -29,13 +29,44 @@ body {
 }
 
 /* Canvas style */
+.canvas-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100vw - 16px);
+    transform: translate(-50%, -50%);
+}
+
+.canvas {
+    display: grid;
+    height: 100%;
+    padding: 1rem;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-shrink: 0;
+    grid-template-rows: repeat(3, 4.5rem);
+    grid-template-columns: repeat(5, 1fr);
+    box-shadow: inset 0 0 0 0.5rem  rgba(255, 255, 255, 0.1);
+    border-radius: 1.25rem;
+}
+
+.item {
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    background: rgba(40, 114, 137, 0.439);
+    border-radius: 4px;
+}
+
+/* Autospin line */
 
 .play-logic-area {
     display: flex;
     flex-direction: column;
     margin-top: auto;
+    justify-content: center;
+    align-items: center;
 }
-/* Autospin line */
 
 .autospin {
     display: flex;
@@ -53,9 +84,15 @@ body {
     text-align: center;
 }
 
+.bet-info p {
+    margin: 0;
+}
+
 .sound, .autoplay {
     width: 3rem;
     height: 3rem;
+    /* width: 2.25rem;
+    height: 2.25rem; */
     border-radius: 50%;
     border: none;
     background: rgba(255, 255, 255, 0.1);
