@@ -4,7 +4,7 @@
 }
 
 html,
-body {
+/* body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -14,7 +14,19 @@ body {
     background-size: cover;
     font-family: 'ABCSocialCondensed', Arial, sans-serif;
     color: white;
-}
+} */
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background: url('./assets/background/base_game_background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'ABCSocialCondensed', Arial, sans-serif;
+    color: white;
+    overflow: hidden; 
+ }
 
 /* Header styles */
 .game-time {
